@@ -19,3 +19,11 @@ sudo chmod u+s /usr/local/bin/contecdio
 sudo cp contec/cdio/config/rc.local /etc
 ```
 
+## setting
+
+```
+cd contec/cdio/config
+sudo ./config
+sudo ./contec_dio_start.sh
+```
+
