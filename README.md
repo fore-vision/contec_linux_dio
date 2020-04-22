@@ -4,13 +4,18 @@
 ## setup 
 
 ```
+cd contec/cdio
+make
+sudo make install
+cd cofnig
+sudo ./contec_dio_start.sh
+
 mkdir build
 cd build
 cmake ..
 make
-sudo chown root contecdio 
-sudo chmod u+s contecdio 
 sudo make install
-
+sudo chmod u+s /usr/local/bin/contecdio 
+sudo cp contec/cdio/config/rc.local /etc
 ```
 
