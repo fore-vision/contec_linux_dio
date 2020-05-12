@@ -1,0 +1,21 @@
+{
+  "name": "contecdio",
+  "version": "1.0.0",
+  "description": "Contec Degital IO library",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fore-vision/contec_linux_dio.git"
+  },
+  "author": "Forevision corporation",
+  "license": "ISC",
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^3.0.0"
+  }
+}
