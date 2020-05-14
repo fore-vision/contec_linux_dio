@@ -39,7 +39,7 @@ Napi::Value ContecDio::Init(const Napi::CallbackInfo &info)
     if (lret != DIO_ERR_SUCCESS)
     {
         DioGetErrorString(lret, buf);
-        return Napi::Number::New(env, -2);
+        Napi::Error::New(env, "can't open Contec DIO ").ThrowAsJavaScriptException();
     }
     inited = true;
     return Napi::Number::New(env, 0);
