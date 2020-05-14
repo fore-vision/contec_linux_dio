@@ -1,2 +1,2 @@
-const { gpio } = require('bindings')('contecdio');
+const { gpio } = require('bindings')('contecgpio');
 module.exports = gpio;
