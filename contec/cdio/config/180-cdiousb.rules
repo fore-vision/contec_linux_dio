@@ -1,4 +1,6 @@
 # CONTEC CDIO USB DEVICE
 # DIO-0808LY-USB (DIO000)
-ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="06ce", ATTRS{idProduct}=="a302", RUN+="/sbin/modprobe cdiousb", MODE="0666"
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="06ce", ATTRS{idProduct}=="a302", RUN+="/sbin/modprobe cdiousb"
+# DIO-0808LY-USB (DIO001)
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="06ce", ATTRS{idProduct}=="a302", RUN+="/sbin/modprobe cdiousb"
 # end
