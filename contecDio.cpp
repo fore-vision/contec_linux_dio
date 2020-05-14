@@ -117,3 +117,11 @@ Napi::Value ContecDio::getPort(const Napi::CallbackInfo &info)
                       : false;
     return Napi::Boolean::New(env, result);
 }
+
+Napi::Object Init(Napi::Env env, Napi::Object exports)
+{
+    ContecDio::Init(env, exports);
+    return exports;
+}
+
+NODE_API_MODULE(contecgpio, Init);
