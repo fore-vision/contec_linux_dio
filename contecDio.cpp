@@ -83,7 +83,7 @@ Napi::Value ContecDio::setPort(const Napi::CallbackInfo &info)
     }
     bool value = info[1].As<Napi::Boolean>().Value();
     char data = value ? 1 : 0;
-    if (inited)
+    if (!inited)
     {
         return Napi::Number::New(env, -1);
     }
@@ -109,6 +109,7 @@ Napi::Value ContecDio::getPort(const Napi::CallbackInfo &info)
         Napi::TypeError::New(env, "Wrong arguments").ThrowAsJavaScriptException();
         return env.Null();
     }
+
     short portNo = (short)info[0].As<Napi::Number>().Int32Value();
     unsigned char data = 0;
     long lret = DioInpBit(id, portNo, &data);
