@@ -1,9 +1,0 @@
-[Unit]
-Description=Set permition of /dev/cdiousb000
-
-[Install]
-RequiredBy=run-contec.path
-
-[Service]
-Type=simple
-ExecStart=/bin/chmod 666 /dev/cdiousb000

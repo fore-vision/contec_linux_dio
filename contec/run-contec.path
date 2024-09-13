@@ -1,9 +1,0 @@
-[Unit]
-Description=Monitor /dev/cdiousb000
-
-[Install]
-WantedBy=multi-user.target
-
-[Path]
-PathExists=/dev/cdiousb000
-Unit=run-chmod.service
